@@ -1,0 +1,179 @@
+
+
+
+
+
+.hwb__top{
+    background-color: #000;
+    padding: 48px 24px;
+    color: #fff;
+    text-align: center;
+}
+
+.hwb__top__subtitle{
+    margin-bottom: 16px;
+}
+
+.hwb__subtitle{
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.hwb__top__title{
+    position: relative;
+    
+}
+
+
+
+
+.hwb__title{
+    font-size: 64px;
+    text-transform: uppercase;
+    font-family: "New-Grotesk-Square";
+   
+   
+}
+.hwb__top__image{
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    margin-top: -28px;
+    margin-bottom: 28px;
+    
+}
+
+.hwb__image{
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+
+}
+
+.hwb__top__discription{
+    max-width: 896px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hwb__discription{
+    font-size: 16px;
+}
+
+.hwb__top__buttons{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 16px;
+}
+
+.top__button{
+    margin-right: 16px;
+    margin-top: 16px;
+}
+
+.hwb__button{
+    display: flex;
+    padding: 0 20px;
+    height: 48px;
+    color: #000;
+    background-color: #fff;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    text-align: center;
+    max-width: 413px;
+    border: 0;
+    text-transform: uppercase;
+}
+
+.hwb__box{
+    display: flex;
+    flex-direction: column;
+    padding: 48px 24px 0 24px;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.middle__box__item{
+    padding-bottom: 48px;
+    flex: 0 0 50%;
+}
+
+@media (min-width: 1024px){
+    .middle__box__item{
+        padding: 0 16px 48px 16px;
+    }
+    
+}
+
+@media (min-width: 1024px){
+    .hwb__box{
+        flex-direction: row;
+        padding: 48px 64px 0 64px;
+    }
+}
+
+.box__item__image{
+    margin-bottom: 16px;
+}
+
+
+
+
+.box__item__info{
+    margin-bottom: 8px;
+}
+
+.item__info__title{
+    font-size: 32px;
+    color: #000;
+    text-transform: uppercase;
+    font-family: 'New-Grotesk-Square';
+}
+
+.item__info__discription{
+    margin-bottom: 16px;
+}
+
+.item__discription__title{
+    font-size: 16px;
+    color: #000;
+    font-family: "neue-haas-grotesk-text";
+
+}
+
+.fbg{
+    background-image: url(img/brew/black-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+    
+}
+
+.hwd__footer{
+    padding-bottom: 48px;
+}
+
+.hwd__footer__item{
+    text-align: center;
+    
+}
+
+.hwd__footer__title{
+    font-size: 48px;
+    color: #fff;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+.hwd__foter__browse{
+    max-width: 896px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #fff;
+    font-size: 16px;
+}
+.hwb__fb{
+    display: flex;
+    flex-direction: row;
+}

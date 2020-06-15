@@ -1,0 +1,403 @@
+.main__page{
+	width: 100%;
+	
+	margin-top: 80px;
+	font-family: "neue-haas-grotesk-text";
+	font-size: 16px;
+
+
+}
+
+.widget__block__item{
+	padding: 12px;
+	background-color: #ECECEC;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 3;
+
+
+}
+
+.widget__block__content{
+	display: flex;
+	justify-content: space-between;
+	width: 1020px;
+	a{
+		text-decoration: underline;
+	}
+	a:hover{
+		color: #00afdb; 
+	}
+
+
+}
+
+@media (max-width: 1024px) {
+	.hidden{
+		display: none;
+	}
+}
+
+
+
+
+
+
+
+/*---------*/
+/*--disel--*/
+/*---------*/
+
+.sp{
+	padding: 0 24px;
+	height: 100%;
+	font-size: 20px;
+	opacity: .3;
+}
+
+@media (max-width: 1024px) {
+	.sp{
+		opacity: 0;
+	}
+	
+}
+
+
+
+
+
+
+
+
+.main__banner{
+	width: 100%;
+	background-image: url(./img/main_page/main__back.jpg);
+	background-size: cover;
+	background-position: center;
+
+}
+
+.banner__position{
+	padding: 48px 24px;
+}
+
+.banner__subtitle{
+	font-size: 18px;
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+	line-height: 1.5;
+}
+
+@media (min-width: 1024px) {
+	.banner__subtitle{
+		display: none;
+	}
+	
+}
+
+.banner__subtitle__circle{
+	text-align: center;
+	font-size: 18px;
+	text-transform: uppercase;
+}
+
+@media (max-width: 1024px) {
+	.banner__subtitle__circle{
+		display: none;
+	}
+	
+}
+
+.banner__title{
+	
+	font-weight: bold;
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+	line-height: 1.5;
+
+	max-width: 896px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 40px;
+}
+
+.banner__title__text{
+	font-size: 64px;
+}
+
+@media(min-width: 1024px){
+	.banner__title__text{
+	font-size: 80px;
+	}
+}
+
+
+@media (min-width: 1280px) {
+	.banner__title__text{
+		font-size: 96px;
+	}
+	
+}
+
+
+.banner__buttons{
+	display: flex;
+	justify-content: center;
+}
+
+.banner__actions{
+	margin: 24px 12px 0 12px;
+
+	
+}
+
+.buttons{
+	display: flex;
+	height: 48px;
+	background-color: #fff;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding: 0 20px;
+	transition: .5s;
+	font-family:"neue-haas-grotesk-text";
+
+}
+
+.cb{
+	background-color: #000;
+	color: #fff;
+}
+
+
+
+.buttons:hover{
+	background-color: #ECECEC;
+}
+
+.cb:hover{
+	background-color: #4e4f4f;
+}
+
+@media (min-width: 1024px) {
+	.banner__buttons{
+		.buttons{
+
+			background-color: transparent;
+		}
+		a{
+			color: #fff;
+			font-size: 24px;
+			text-decoration: underline;
+			transition: .5s;
+		}
+		a:hover{
+			text-decoration: none;
+		}
+	}
+}
+
+
+.craft__collection{
+	display: flex;
+	flex-direction: column;
+	padding: 48px 24px;
+	max-width: 1600px;
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+@media (min-width:  1280px) {
+	.craft__collection{
+		padding: 48px 64px;
+		
+	}
+	
+}
+
+
+
+.craft__title{
+	
+	margin-bottom: 8px;
+}
+
+.craft__title__text{
+	text-transform: uppercase;
+	font-size: 64px;
+	font-family: "New-Grotesk-Square";
+}
+
+@media (min-width: 1024px) {
+	.ctt{
+		text-align: left;
+	}
+	
+}
+
+.craft__image{
+	padding-bottom: 16px;
+	width: 100%;
+	
+	img{
+	height: auto;
+	max-width: 100%;
+	}
+}
+
+.craft__body__text{
+	max-width: 896px;
+	margin-bottom: 16px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.craft__buttons{
+	max-width: 512px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.cap{
+	margin-top: 16px;
+}
+
+.craft__collection__image{
+	width: 100%;
+	background-image: url(./img/main_page/fast-track.jpg);
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	height: 348px;
+	margin-bottom: 48px;
+	
+}
+
+
+.cti1{
+	background-image: url(./img/main_page/build.jpg);
+
+}
+
+.cti2{
+	background-image: url(./img/main_page/overworks.jpg);
+}
+
+.cti3{
+	background-image: url(./img/main_page/lone.jpg);
+}
+
+.craft__image__title{
+	position: absolute;
+	padding: 0 24px 24px 24px;
+	bottom: 0;
+}
+
+.ctt{
+	color: #fff;
+	font-size: 48px;
+}
+
+.btnm{
+	width: 116px;
+	height: 40px;
+}
+
+.craft__collection__buttons{
+	margin: 16px 16px 0 0;
+}
+
+@media (min-width: 1024px) {
+	.ccm{
+		display: flex;
+		flex-direction: row;
+
+	}
+	
+}
+
+@media (min-width: 1024px) {
+	.craft__collection__image{
+		margin: 0 16px;
+	}
+	
+}
+
+.brewdog__products{
+	padding-bottom: 48px;
+}
+
+.brewdog__products__item{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+@media (min-width: 1024px) {
+	.brewdog__products__item{
+		padding: 0 16px;
+	}
+	
+}
+
+.products__image{
+	padding: 0 80px;
+	img{
+		height: auto;
+		max-width:100%;
+		width: 100%;
+	}
+}
+
+@media (min-width: 1024px) {
+	.products__image{
+		padding: 0;
+		width: 50%;
+		margin-bottom: 24px;
+
+	}
+	
+}
+
+.pb{
+	display: inline-flex;
+}
+
+.product__name{
+	margin-bottom: 16px;
+	font-family: New-Grotesk-Square;
+	font-size: 24px;
+	text-transform: uppercase;
+}
+
+@media (min-width: 1024px) {
+	.product__name{
+		font-size: 32px;
+	}
+	
+}
+
+.product__contains{
+	margin-bottom: 24px;
+}
+
+@media (min-width: 1024px) {
+	.product__contains{
+		line-height: 1.5;
+	}
+	
+}
+
+@media (min-width: 1024px) {
+	.bdpm{
+		display: flex;
+		flex-direction: row;
+		
+	}
+	
+}

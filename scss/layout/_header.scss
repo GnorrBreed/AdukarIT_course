@@ -1,0 +1,722 @@
+.header{
+	position: fixed;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	top: 0;
+	left: 0;
+	right: 0;
+	
+	font-family:"neue-haas-grotesk-text";
+	box-sizing: content-box;
+	height: 72px;
+	width: 100wv;
+	background-color: white;
+	z-index: 20;
+	
+	
+}
+
+
+
+
+
+
+/* CHANGES */
+.header__mobile{
+
+	/* position: relative; эту строку удаляем */
+	height: 72px;
+	
+	display: flex;
+	flex-direction:column;
+
+
+	
+
+	
+
+	justify-content: center;
+	
+	padding-left: 24px;
+	
+}
+
+@media (min-width: 1280px) {
+	.header__mobile{
+		display: flex;
+		padding-left: 0;
+	}
+	
+}
+
+
+.switch3{
+	display: none;
+}
+
+
+
+.switch3:checked ~ .header__mobile__menu{
+	display: block;
+	
+}
+
+
+
+.switch3:checked ~ .line1{
+	display: none;
+	
+}
+
+.switch3:checked ~ .line2{
+	transform: rotate(45deg);
+	
+}
+
+
+.switch3:checked ~ .line3{
+	transform: rotate(-45deg);
+	
+}
+
+.switch3:checked ~ .line4{
+	display: none;
+	
+}
+
+
+.mobile__menu{
+	display: block;
+	top:0;
+	left: 0;
+	height: 72px;
+	width: 48px;
+	cursor: pointer;
+	z-index: 13; 
+}
+
+@media (min-width: 1280px) {
+	.mobile__menu{
+		display: none;
+	}
+	
+}
+
+.burger__line{
+	position: absolute;
+	width: 28px;
+	height: 2px;
+	top: 18px;
+	background-color: #000;
+	
+}
+
+
+.line2, .line3 {
+	top: 25px;
+}
+
+.line4{
+	top: 32px;
+}
+
+.menu__name{
+	position: absolute;
+	top: 40px;
+	font-size: 11px;
+}
+
+@media (min-width: 1280px) {
+	.burger__line{
+		display: none;
+	}
+
+	.menu__name{
+		display: none;
+	}
+	
+}
+
+
+.header__mobile__menu{
+	position: absolute;
+	width: 100vw;
+	
+	bottom: 0;
+	left: 0;
+	transform: translateY(100%);
+	overflow: hidden;
+	padding: 0;
+	display: none;
+	background-color: #ECECEC;
+	overflow: auto;
+	height: calc(100vh - 72px);
+
+
+	
+}
+
+@media (min-width: 1280px) {
+	/* CHANGES */
+	.header__mobile__menu{
+		/*display: block;  удаляю, два дисплея*/
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		/*width: 100%; удаляю, может помешать, вместо неё добавляю */
+		width: auto;
+		/*position: relative; удаляю, вместо неё добавляю */
+		position: static;
+		/*top: 0; тоже больше не нужна */
+		transform: none;
+		height: 72px;
+		/* overflow: hidden; тоже можно удалить кстати */
+		background-color: white;
+		overflow: visible;
+		
+
+	}
+	
+}
+
+
+
+
+.mobile__actions__action{
+	display: block;
+	width: 100%;
+	position: relative;
+	
+	font-size: 24px;
+	text-transform: uppercase;
+	font-family: 'englishgrotesquemedium';
+	
+	border-bottom: 2px solid #B3B3B3;
+	
+}
+
+
+@media (min-width: 1280px) {
+	/* CHANGES */
+	.mobile__actions__action{
+		/* display: block; удаляем */
+		text-transform: none;
+		border-bottom: none;
+		display: flex;
+		flex-direction: row;
+		/* добавляем */
+		position: static;
+	}
+
+
+}
+
+
+
+
+
+
+
+.burger__plus__line{
+	position: absolute;
+	width: 28px;
+	height: 2px;
+	
+	background-color: #000;
+	right: 28px;
+	top: 42px;
+
+
+
+}
+
+
+
+
+.plus__line1{
+	transform: rotate(90deg);
+}
+
+.mobile__actions__plus{
+	display: none;
+	
+}
+
+.mobile__actions__checked{
+	display: block;
+	width: 100%;
+	height: 86px;
+	overflow: hidden;
+	z-index: 13;
+	position: relative;
+	display: flex;
+	align-items: center;
+	padding-left: 24px;
+	font-family:"neue-haas-grotesk-text";
+	font-size: 18px;
+
+}
+
+
+
+@media (min-width: 1280px) {
+	.burger__plus__line{
+		display: none;
+	}
+
+	.mobile__actions__checked{
+		padding-left: 0;
+		height: 72px;
+		justify-content: center;
+
+	}
+
+
+
+	
+	
+}
+
+
+
+
+
+
+.mobile__submenu{
+	display: none;
+	padding: 0 16px;
+}
+
+@media(min-width: 1280px){
+	.mobile__submenu{
+		text-transform: uppercase;
+		
+		
+		
+		
+		
+
+		
+
+		
+	}
+	.mobile__submenu:first-child{
+		text-transform: none;
+	}	
+}
+
+
+
+.sub{
+	font-size: 12px;
+	height: 52px;
+	padding-left: 32px;
+	border-top: 1px solid #B3B3B3;
+}
+
+@media (min-width: 1280px) {
+	.sub{
+		border-top: none;
+	}
+	
+}
+
+
+.mobile__submenu__item{
+	display: block;
+	width: 100%;
+	position: relative;
+	
+}
+
+@media (min-width: 1280px) {
+	.mobile__submenu__item{
+		display: flex;
+		flex-direction: column;
+	}
+	
+}
+
+.sub__line{
+	position: absolute;
+	width: 16px;
+	height: 2px;
+	background-color: #000;
+	top: 26px;
+	right: 52px;
+}
+
+@media (min-width: 1280px) {
+	.sub__line{
+		display: none;
+	}
+	
+}
+
+
+
+.submenu__links{
+	display: none;
+}
+
+@media(min-width: 1280px){
+	.submenu__links{
+		display: block;
+		text-transform: none;
+	}
+}
+
+.submenu__links__link{
+	display: block;
+	background-color: #DBDBDB;
+	font-size: 12px;
+	padding: 16px;
+  	padding-left: 32px;
+  	font-family:"neue-haas-grotesk-text";
+  	
+
+	border-top: 1px solid #B3B3B3;
+
+
+}
+
+@media (min-width: 1280px){
+	.submenu__links__link{
+		border:none;
+		background-color: #fff;
+	}
+}
+
+/*---------*/
+/*--DISEL--*/
+/*---------*/
+
+.ml{
+	background-color: transparent;
+}
+
+.lcp{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 110px;
+}
+
+@media(min-width: 1280px){
+	.lcp{
+		width: 250px;
+	}
+}
+
+
+.msp{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 150px;
+}
+
+@media (min-width: 1280px) {
+	.msp{
+		justify-content: space-between;
+		width: 100%;
+		padding: 0 16px;
+	}
+	
+}
+
+
+
+.mslp{
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+
+
+@media(min-width: 1280px){
+	.mslp{
+		flex-direction: row-reverse;
+	}
+}
+
+
+
+
+.links__link__hover:hover{
+	color: #00afdb;
+}
+
+@media(min-width: 1280px){
+	.links__link__hover:hover{
+		color: black;
+	}
+}
+
+@media (min-width: 1280px) {
+	
+	
+}
+
+.pointer{
+	pointer-events: none;
+}
+
+
+@media (min-width: 1280px) {
+	.pointer{
+		pointer-events: auto;
+		padding-right: 24px;
+
+	}
+
+	.pointer:hover{
+		color: #00afdb;
+	}
+	
+}
+
+
+.switch{
+	display: none;
+}
+
+.switch:checked ~ .plus__line1{
+	display: none;
+}
+
+.switch:checked ~ .mobile__submenu{
+	display: block;
+}
+
+.switch__sub{
+	display: none;
+}
+
+
+.switch__sub:checked ~ .plus__line1{
+	display: none;
+}
+
+.switch__sub:checked ~ .submenu__links{
+	display: block;
+}
+
+
+@media(mix-width: 1280px){
+	.switch__sub{
+		display: block;
+	}
+
+}
+
+.search{
+	display: none;
+}
+
+.search:checked ~ .search__menu{
+	display: block;
+
+}
+
+
+.mobile__search{
+	display: inline-block;
+	width: 48px;
+	height: 100%;
+	
+}
+
+@media (min-width: 1280px) {
+	.mobile__search{
+		margin-right: 24px;
+	}
+	
+}
+
+.search__name{
+	display: block;
+	padding-top: 3px;
+	font-size: 11px;
+
+}
+@media (min-width: 1280px) {
+	.search__name{
+		font-size: 18px;
+	}
+	
+}
+
+
+.search__menu{
+	display: none;
+	position: absolute;
+	background-color: white;
+	z-index: 10;
+	padding-bottom: 32px;
+	max-width: 1110px;
+	width: 100%;
+	left: 50%;
+	transform: translateX(-50%);
+		
+}
+
+.search__menu__item{
+	padding: 24px;
+
+}
+
+
+.mobile__search__label{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	
+}
+
+@media (min-width: 1280px){
+	.mobile__search__label{
+		height: 80px;
+		width: 90px;
+		flex-direction: row-reverse;
+		justify-content: space-between;
+
+		
+		
+		font-size: 18px;
+		img{
+			width: 20px;
+
+		}
+	}
+
+}
+
+.text__input{
+	width: 100%;
+	height: 100%;
+	font-size: 64px;
+	padding-bottom: 0;
+}
+
+
+
+
+@media (min-width: 1280px) {
+	/* CHANGES */
+	.mobile__actions:hover .mobile__submenu{
+		display: block;
+		/* тут аж четыре новые строки */
+	    position: absolute;
+	    left: 0;
+	    right: 0;
+	    top: 73px;
+	
+	}
+	
+}
+
+
+
+
+
+.header__logo{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+	img{
+	     height: 28px;
+	}
+
+}
+
+@media(min-width: 1280px){
+	.header__logo{
+		width: 200px;
+		padding-left: 40px;
+		justify-content: left;
+	
+		img{
+			height: 40px;
+		}
+
+	}	
+}
+
+
+.login{
+	
+	font-size: 14px;
+	
+	height: 100%;
+	width: 72px;
+	
+
+
+	img{
+		display: none;
+
+	}
+
+
+
+}
+
+@media(min-width: 1280px){
+	.login{
+
+		font-size: 18px;
+		margin-left: 24px;
+		
+		
+		img{
+			display: block;
+		}
+		a{
+			display: flex;
+			width: 75px;
+			justify-content: space-between;
+			align-items: center;
+		}
+	}
+}
+
+
+
+
+
+
+.cart{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	height: 100%;
+	width: 72px;
+	
+	font-size: 11px;
+	padding-right: 24px;
+}
+
+@media(min-width: 1280px){
+	.cart{
+		width: 100px;
+		flex-direction: row-reverse;
+		font-size: 18px;
+		padding-right: 10px;
+		justify-content: space-around;
+		padding-right: 40px;
+
+		a{
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+		}
+	}
+}
+
