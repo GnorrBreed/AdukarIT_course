@@ -1689,6 +1689,7 @@ input[type=radio] {
   font-size: 64px;
   text-transform: uppercase;
   font-family: "New-Grotesk-Square";
+  position: relative;
 }
 
 .hwb__top__image {
@@ -1825,6 +1826,8 @@ input[type=radio] {
 .hwb__fb {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .footer {
